@@ -14,6 +14,8 @@
 		0FC5FA872BA619E000A1737A /* football_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC5FA862BA619E000A1737A /* football_2Tests.swift */; };
 		0FC5FA912BA619E000A1737A /* football_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC5FA902BA619E000A1737A /* football_2UITests.swift */; };
 		0FC5FA932BA619E000A1737A /* football_2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC5FA922BA619E000A1737A /* football_2UITestsLaunchTests.swift */; };
+		0FC5FAA12BA61A3700A1737A /* VideoPlayerContainer in Frameworks */ = {isa = PBXBuildFile; productRef = 0FC5FAA02BA61A3700A1737A /* VideoPlayerContainer */; };
+		0FC5FAA42BA61A5600A1737A /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 0FC5FAA32BA61A5600A1737A /* GoogleMobileAds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FC5FAA42BA61A5600A1737A /* GoogleMobileAds in Frameworks */,
+				0FC5FAA12BA61A3700A1737A /* VideoPlayerContainer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +147,10 @@
 			dependencies = (
 			);
 			name = football_2;
+			packageProductDependencies = (
+				0FC5FAA02BA61A3700A1737A /* VideoPlayerContainer */,
+				0FC5FAA32BA61A5600A1737A /* GoogleMobileAds */,
+			);
 			productName = football_2;
 			productReference = 0FC5FA722BA619DD00A1737A /* football_2.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,10 @@
 				Base,
 			);
 			mainGroup = 0FC5FA692BA619DD00A1737A;
+			packageReferences = (
+				0FC5FA9F2BA61A3700A1737A /* XCRemoteSwiftPackageReference "VideoPlayerContainer" */,
+				0FC5FAA22BA61A5500A1737A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			productRefGroup = 0FC5FA732BA619DD00A1737A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -582,6 +594,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0FC5FA9F2BA61A3700A1737A /* XCRemoteSwiftPackageReference "VideoPlayerContainer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shayanbo/VideoPlayerContainer.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		0FC5FAA22BA61A5500A1737A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0FC5FAA02BA61A3700A1737A /* VideoPlayerContainer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FC5FA9F2BA61A3700A1737A /* XCRemoteSwiftPackageReference "VideoPlayerContainer" */;
+			productName = VideoPlayerContainer;
+		};
+		0FC5FAA32BA61A5600A1737A /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FC5FAA22BA61A5500A1737A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0FC5FA6A2BA619DD00A1737A /* Project object */;
 }
